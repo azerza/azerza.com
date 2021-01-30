@@ -1,0 +1,380 @@
+
+  	*{
+        outline: none;
+        margin: auto;
+        border:0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Londrina Solid', cursive;
+     
+     
+     }
+     
+     body{
+       width: 80%; 
+       background-image:url("https://images.wallpaperscraft.com/image/city_night_panorama_117682_3840x2400.jpg");
+       white-space: nowrap;
+       background-size: 100% 100vh;
+       background-attachment: fixed;
+       background-origin: border-box;
+       background-repeat: no-repeat;
+     
+     }
+     
+     header{
+       margin-top: 90px;
+       padding-top: 30px;
+       text-align:center;
+       width: 1500px;
+       background:rgb(0,0,0,.3);  
+       height: 65px;
+       position:static;
+     
+     }
+     
+     ol li .firstol{
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       background: red;
+       width: 200px;
+       height: 250px;
+       top: 65px;
+       padding: -10px -10px -10px -10px;
+       left: -20px;
+       border-radius: 10px 10px 10px 10px;
+       visibility: hidden;
+       opacity: 0;
+       transition: .3s;
+     
+     }
+     ol li .firstol li{
+       font-size: 17px;
+       display: flex;
+       position: relative;
+       
+     
+     }
+     ol li .firstol li a{
+       left: 0;
+       padding: 0;
+     
+     
+     }
+     
+     
+     ol li .secondol{
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       background: #540A77;
+       width: 250px;
+       height: 250px;
+       top: 65px;
+       padding: -10px -10px -10px -10px;
+       border-radius: 10px 10px 10px 10px;
+       left: -20px;
+       opacity: 0;
+       visibility: hidden;;
+       transition: .4s;
+     
+     }
+     
+     ol li .secondol li{
+       font-size: 17px;
+       display: flex;
+       position: relative;
+       
+     
+     }
+     
+     ol li .secondol li a{
+       left: 0;
+       padding: 0;
+     
+     
+     }
+     
+     ol li .thirdol{
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       background: rgb(0,0,0,.4);
+       width: 250px;
+       height: 250px;
+       top: 65px;
+       padding: -10px -10px -10px -10px;
+       border-radius: 10px 10px 10px 10px;
+       left: -20px;
+       opacity: 0;
+       visibility: hidden;;
+       transition: .4s;
+     
+     }
+     
+     ol li .thirdol li{
+       font-size: 17px;
+       display: flex;
+       position: relative;
+       
+     
+     }
+     
+     ol li .thirdol li a{
+       left: 0;
+       padding: 0;
+     
+     
+     }
+     
+     ol li a{ 
+       position: sticky;
+       color:white;
+       padding-bottom: 38px
+       }
+     
+     
+     ol >li {
+       float:left;
+       right:15%;
+       margin-left:29%;
+       position:relative;
+       width:1%;
+       font-size: 22px;
+       padding: 0;
+       color:white;
+     
+     }
+     
+     #software:hover{
+         color:red;
+         transition: all 1s;
+     }
+     #graphic:hover{
+         color:#540A77;
+         transition: all 1s;
+     }
+     #cyber:hover{
+         color:black;
+         transition: all 1s;
+     }
+     
+     #cyber{
+       transition: all 1s;
+     }
+     #graphic{
+       transition: all 1s;
+     }
+     #software{
+       transition: all 1s;
+     }
+     
+     
+     #software::after {
+       content: "";
+       position: absolute;
+       opacity: 0;
+       visibility: hidden;
+     
+     }
+     .box-a #software::after {
+       top: 90%;
+       height: 3px ; 
+       width: 40%;
+       left: 30%;
+       background-color:red;
+       transition: 0.4s ease-out all .1s;
+     }
+     
+     .box-a:hover #software::after {
+       width: 160%;
+       left: 0%;
+       opacity: 1;
+       visibility: visible;
+       transition: 0.5s ease all;
+     }
+     
+     
+     
+     #graphic::after {
+       content: "";
+       position: absolute;
+       opacity: 0;
+       visibility: hidden;
+     }
+     .box-b #graphic::after {
+       top: 90%;
+       height: 3px ;
+       width: 40%;
+       left: 25%;
+       background-color:#540A77;
+       transition: 0.4s ease-out all .1s;
+     }
+     
+     .box-b:hover #graphic::after {
+       width: 100%;
+       left:0%;
+       opacity: 1;
+       visibility: visible;
+       transition: 0.5s ease all;
+     }
+     
+     
+     
+     
+     #cyber::after {
+       content: "";
+       position: absolute;
+       opacity: 0;
+       visibility: hidden;
+       transition: 0.5s;
+     }
+     .box-c #cyber::after {
+       top: 90%;
+       height: 3px ;
+       width: 40%;
+       left: 30%;
+       background: white;
+       transition: 0.4s ease-out all .1s;
+     }
+     
+     .box-c:hover #cyber::after {
+       width: 100%;
+       left:0%;
+       opacity: 1;
+       visibility: visible;
+       transition: 0.5s ease all;
+     }
+     
+     
+     
+     .wrapper {
+       top:270px;
+       left: 30px;
+       transition: all 1s ease-out;
+       border:0;
+       width: 450px;
+       height: 400px;
+       margin:  auto;
+       position: relative;
+       overflow: hidden;
+     }
+     
+     .main-element {
+       position: absolute;
+       top: 1%;
+       left: 1%;
+       display: block;
+       height: 98%;
+       width: 98%;
+       margin: auto;
+       align-self: center;
+       border-radius: 50px 1px 50px 50px;
+     }
+     
+     .border {
+       position: relative;
+       display: block;
+       top: -50%;
+       left: -50%;
+       z-index: -9;
+       height: 199%;
+       width: 199%;
+       transform: rotate(150deg);
+       overflow: hidden;
+       background: linear-gradient(to left, black 20%, white 40%, yellow 50%, red 70%, purple 100%);
+       background-size: 200% auto;
+       
+       animation: shine 8s linear infinite;
+     }
+     
+     
+     @keyframes shine {
+         to {
+           background-position: 200% center;
+         }
+       }
+     
+     h2{
+       font-size: 19px;
+       color:white;
+       margin-left: 100px;
+       margin-top: 80px;
+     }
+     
+     .p1{
+       color:gray;
+       font-size: 14px;
+       margin-left: 100px;
+     }
+     
+     h3{
+       font-size: 19px;
+       color:white;
+       margin-left: 700px;
+       margin-top: -80px;
+       position: absolute;
+     }
+     
+     .p2{
+       color:gray;
+       font-size: 14px;
+       margin-left: 700px;
+       margin-top: -30px;
+       position: relative;
+     }
+     .p3{
+       color:white;
+       font-size: 15px;
+       margin-top: -30px;
+       margin-left: 1200px;
+     }
+     
+     
+     
+     .box-a:hover .firstol{
+       visibility: visible;
+       opacity: 1;
+       transition: .5s;
+     }
+     .firstol li a:hover{
+       text-decoration: underline;
+     }
+     
+     
+     .box-b:hover .secondol{
+       visibility: visible;
+       opacity: 1;
+       transition: .5s;
+     }
+     .secondol li a:hover{
+       text-decoration: underline;
+     }
+     
+     .box-c:hover .thirdol{
+       visibility: visible;
+       opacity: 1;
+       transition: .5s;
+     }
+     .thirdol li a:hover{
+       text-decoration: underline;
+     }
+     
+     
+     
+     .mymain{
+       background:rgb(0,0,0,.7 );
+       border: 0;
+       padding: 0;
+       bottom: -350px;
+       width: 1500px;
+       height: 250px;
+       position: absolute;
+     }
+     
+     
+       
+       
+       
+       
